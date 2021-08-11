@@ -1,2 +1,43 @@
-body{ background: #7D73FC;}
+body{
+    font-family: Roboto;
+}
+
+.container {
+    display: flex;
+    border: 1px solid;
+    width: 375px;
+    background-color: rgb(235, 230, 230);
+    flex-direction: column;
+}
+
+.container-toolbar{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container-headline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.headline-name{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: center;
+    color:rgba(125, 115, 252, 1)
+
+}
+
+.identity{
+    height:87px;
+    font-size: 32px;
+    font-style: Medium;
+}
+
 
