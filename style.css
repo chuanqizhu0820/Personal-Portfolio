@@ -1,21 +1,37 @@
-body{
-    font-family: Roboto;
+body { 
+    font-family: Roboto; 
 }
 
-.container {
+.container { 
+
     display: flex;
     border: 1px solid;
     width: 375px;
-    background-color: rgb(235, 230, 230);
-    flex-direction: column;
+    background-color: rgb(4, 6, 110);
+    flex-direction: column; 
+    background-image: url("img/Ellipse-large.svg");
+    background-repeat: no-repeat;
 }
 
-.container-toolbar{
+.toolbar-container {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 60px;
+    justify-content: space-between;
 }
 
-.container-headline{
+.logo {
+    color: white;
+    margin-left: 24px;
+}
+
+.menu-icon{
+    
+    justify-self: flex-end;
+    margin-right: 24px;
+
+}
+
+.headline-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,21 +39,52 @@ body{
     margin-right: 24px;
 }
 
-.headline-name{
+.headline-name {
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
     letter-spacing: 0.3700000047683716px;
     text-align: center;
-    color:rgba(125, 115, 252, 1)
-
+    color:rgba(125, 115, 252, 1);
 }
 
-.identity{
+
+
+.identity {
     height:87px;
     font-size: 32px;
     font-style: Medium;
+    color: white;
 }
 
+.description{
+    color:white;
+}
+
+.skill {
+    color: white;
+}
+
+.skill-container{
+    display:flex;
+    flex-wrap: wrap;
+    background-image:url("img/Ellipse-small.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.language, .framework, .tools{
+    width: 84px;
+    margin:43.17px;
+}
+
+h3 {
+    color:rgba(125, 115, 252, 1)
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+}
 
