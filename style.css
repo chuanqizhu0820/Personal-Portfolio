@@ -25,9 +25,17 @@ body { font-family: Roboto, Arial, sans-serif; }
   padding: 3px;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .menu-icon {
   justify-self: flex-end;
   margin-right: 39.33px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
 }
 
 .headline-container {
@@ -172,4 +180,24 @@ h3 {
 .contact-container {
   display: flex;
   justify-content: center;
+}
+
+.github:hover {
+  cursor: pointer;
+}
+
+.linkin:hover {
+  cursor: pointer;
+}
+
+.gesture:hover {
+  cursor: pointer;
+}
+
+.twitter:hover {
+  cursor: pointer;
+}
+
+.m:hover {
+  cursor: pointer;
 }
