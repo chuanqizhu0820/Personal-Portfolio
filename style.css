@@ -195,16 +195,15 @@ h3 {
 
 .work-link {
   font-size: 20px;
-  font-weight: 500; 
+  font-weight: 500;
   line-height: 32px;
-  letter-spacing: 0em;
   text-align: center;
   color: rgba(162, 163, 174, 1);
 }
 
 .work-link-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .work-link-container > img { margin-right: 5px; }
@@ -267,24 +266,24 @@ h2 {
   font-weight: 500;
   line-height: 44px;
   text-align: left;
-  color: white; 
-  margin-left: 24px; 
-  margin-right: 24px;  
+  color: white;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .work-description {
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
   color: rgba(220, 220, 232, 1);
-  margin-left: 24px; 
+  margin-left: 24px;
   margin-right: 24px;
 }
 
 .work-skills {
-  font-family: Inter;
+  font-family: Inter, Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -293,12 +292,12 @@ h2 {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: center;
-    margin-left: 24px; 
-    margin-right: 24px;
-    height: 48px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  text-align: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 48px;
 }
 
 .gird {
@@ -306,68 +305,65 @@ h2 {
   padding-top: 15px;
 }
 
-.grid0 { padding-top: 15px; } 
+.grid0 { padding-top: 15px; }
 
 button {
-    background-color: rgba(125, 115, 252, 1);
-    color: white;
-    font-size: 12px; 
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: center;
-    border:none;
-    width: 89px;
-    height: 48px;
-    margin-left: 24px; 
+  background-color: rgba(125, 115, 252, 1);
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 89px;
+  height: 48px;
+  margin-left: 24px;
 }
 
 .work2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 45px;
-    background-image: url("img/Ellipse-shallow.svg");
-    background-repeat: no-repeat;
-    background-position-y: 200px;
-  }
-  
-  .work2 > img {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  background-image: url("img/Ellipse-shallow.svg");
+  background-repeat: no-repeat;
+  background-position-y: 200px;
+}
 
-  .work3 {
-    display: flex;
-    flex-direction: column;
-    background-image: url("img/Ellipse-22.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-top: 45px;
-  }
-  
-  .work3 > img {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .work4 {
-    display: flex;
-    flex-direction: column;
-    background-image: url("img/Ellipse-20.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-top: 45px;
-  }
-  
-  .work4 > img {
-    margin-left: 24px;
-    margin-right: 24px;
-  }
-
-  .about-section > p {
+.work2 > img {
   margin-left: 24px;
   margin-right: 24px;
-  }
+}
 
+.work3 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/Ellipse-22.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 45px;
+}
 
+.work3 > img {
+  margin-left: 24px;
+  margin-right: 24px;
+}
 
+.work4 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/Ellipse-20.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-top: 45px;
+}
+
+.work4 > img {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.about-section > p {
+  margin-left: 24px;
+  margin-right: 24px;
+}
