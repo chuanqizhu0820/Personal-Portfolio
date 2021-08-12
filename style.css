@@ -1,5 +1,14 @@
 body { font-family: Roboto, Arial, sans-serif; }
 
+ul {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   border: 1px solid;
@@ -12,7 +21,7 @@ body { font-family: Roboto, Arial, sans-serif; }
 
 .toolbar-container {
   display: flex;
-  margin-top: 10px;
+  margin-top: 40px;
   justify-content: space-between;
 }
 
