@@ -132,6 +132,10 @@ h3 {
   text-align: left;
 }
 
+.break-about {
+  margin: 0 24px 0 24px;
+}
+
 .lan-container {
   display: flex;
   flex-direction: column;
@@ -189,6 +193,24 @@ h3 {
   justify-content: center;
 }
 
+.work-link {
+  font-size: 20px;
+  font-weight: 500; 
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(162, 163, 174, 1);
+}
+
+.work-link-container {
+    display: flex;
+    justify-content: center;
+}
+
+.work-link-container > img { margin-right: 5px; }
+
+.work-link-container > a { margin-left: 5px; }
+
 .github:hover {
   cursor: pointer;
 }
@@ -208,3 +230,144 @@ h3 {
 .m:hover {
   cursor: pointer;
 }
+
+.work-container {
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 52px;
+  text-align: left;
+  color: rgba(148, 144, 255, 1);
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.breakline-work {
+  margin: 33px 24px 33px 24px;
+}
+
+.work1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("img/Ellipse-long.svg");
+  background-repeat: no-repeat;
+  background-position-y: 70px;
+}
+
+.work1 > img {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.work-name {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+  color: white; 
+  margin-left: 24px; 
+  margin-right: 24px;  
+}
+
+.work-description {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  color: rgba(220, 220, 232, 1);
+  margin-left: 24px; 
+  margin-right: 24px;
+}
+
+.work-skills {
+  font-family: Inter;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-left: 24px; 
+    margin-right: 24px;
+    height: 48px;
+}
+
+.gird {
+  border-right: 1px solid rgba(100, 99, 105, 1);
+  padding-top: 15px;
+}
+
+.grid0 { padding-top: 15px; } 
+
+button {
+    background-color: rgba(125, 115, 252, 1);
+    color: white;
+    font-size: 12px; 
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    border:none;
+    width: 89px;
+    height: 48px;
+    margin-left: 24px; 
+}
+
+.work2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    background-image: url("img/Ellipse-shallow.svg");
+    background-repeat: no-repeat;
+    background-position-y: 200px;
+  }
+  
+  .work2 > img {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .work3 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/Ellipse-22.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 45px;
+  }
+  
+  .work3 > img {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .work4 {
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/Ellipse-20.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 45px;
+  }
+  
+  .work4 > img {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .about-section > p {
+  margin-left: 24px;
+  margin-right: 24px;
+  }
+
+
+
