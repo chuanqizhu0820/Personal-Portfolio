@@ -3,6 +3,7 @@ body { font-family: Roboto, Arial, sans-serif; }
 ul {
   list-style-type: none;
   padding-left: 0;
+  line-height: 100%;
 }
 
 a { text-decoration: none; }
@@ -148,6 +149,8 @@ h3 {
   text-align: left;
 }
 
+.lan-container > li { padding-bottom: 8px;}
+
 .fra-container {
   display: flex;
   flex-direction: column;
@@ -160,6 +163,8 @@ h3 {
   text-align: left;
 }
 
+.fra-container > li { padding-bottom: 8px; }
+
 .to-container {
   display: flex;
   flex-direction: column;
@@ -171,6 +176,8 @@ h3 {
   letter-spacing: 0;
   text-align: left;
 }
+
+.to-container > li { padding-bottom: 8px; }
 
 .lan-container > div {
   padding-bottom: 3px;
@@ -231,7 +238,7 @@ h3 {
 }
 
 .work-container {
-  flex-direction: column;
+  display: grid;
 }
 
 h2 {
@@ -319,6 +326,10 @@ button {
   width: 89px;
   height: 48px;
   margin-left: 24px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .work2 {
