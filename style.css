@@ -305,12 +305,17 @@ h2 {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  text-align: center;
+  float: left;
   margin-left: 24px;
   margin-right: 24px;
   height: 48px;
+}
+
+li {
+  float:left;
+  margin-right: 10px;
+  text-justify:center;
+  padding-right: 15px;
 }
 
 .gird {
