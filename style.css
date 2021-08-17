@@ -404,3 +404,22 @@ form {
   margin: 20px;
   width: 327px;
 }
+
+form input {
+  margin-bottom: 20px;
+  height: 48px;
+}
+
+form textarea {
+  margin-bottom: 20px;
+  height: 148px;
+}
+
+form button {
+  width: 89px;
+  height: 48px;
+  align-items: center;
+  position: static;
+  background-color: #7d73fc;
+  color: #fff;
+}
