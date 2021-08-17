@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 ul {
@@ -299,7 +299,7 @@ h2 {
 }
 
 .work-description {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -310,7 +310,7 @@ h2 {
 }
 
 .work-skills {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
@@ -348,10 +348,6 @@ button {
   width: 89px;
   height: 48px;
   margin-left: 24px;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 .work2 {
@@ -408,6 +404,7 @@ form {
 form input {
   margin-bottom: 20px;
   height: 48px;
+  border: none;
 }
 
 form textarea {
@@ -431,5 +428,33 @@ form button {
 }
 
 .contact p {
-  margin-bottom: 55px;
+  font-family: "Inter", Arial, sans-serif;
+  margin-bottom: 45px;
+  margin-left: 24px;
+  margin-right: 24px;
+  color: rgba(245, 245, 255, 1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+}
+
+::placeholder {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  padding-left: 16px;
+}
+
+input[type="email"]::placeholder {
+  color: rgba(25, 23, 101, 1);
+}
+
+button:hover {
+  cursor: pointer;
 }
