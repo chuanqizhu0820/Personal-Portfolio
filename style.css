@@ -1,4 +1,6 @@
-body { font-family: Roboto, Arial, sans-serif; }
+body {
+  font-family: Roboto, Arial, sans-serif;
+}
 
 ul {
   list-style-type: none;
@@ -6,7 +8,9 @@ ul {
   line-height: 100%;
 }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none;
+}
 
 .container {
   display: flex;
@@ -152,7 +156,9 @@ h3 {
   text-align: left;
 }
 
-.lan-container > li { padding-bottom: 8px; }
+.lan-container > li {
+  padding-bottom: 8px;
+}
 
 .fra-container {
   display: flex;
@@ -166,7 +172,9 @@ h3 {
   text-align: left;
 }
 
-.fra-container > li { padding-bottom: 8px; }
+.fra-container > li {
+  padding-bottom: 8px;
+}
 
 .to-container {
   display: flex;
@@ -180,7 +188,9 @@ h3 {
   text-align: left;
 }
 
-.to-container > li { padding-bottom: 8px; }
+.to-container > li {
+  padding-bottom: 8px;
+}
 
 .lan-container > div {
   padding-bottom: 3px;
@@ -216,9 +226,13 @@ h3 {
   justify-content: center;
 }
 
-.work-link-container > img { margin-right: 5px; }
+.work-link-container > img {
+  margin-right: 5px;
+}
 
-.work-link-container > a { margin-left: 5px; }
+.work-link-container > a {
+  margin-left: 5px;
+}
 
 .github:hover {
   cursor: pointer;
@@ -318,7 +332,9 @@ h2 {
   padding-top: 15px;
 }
 
-.grid0 { padding-top: 15px; }
+.grid0 {
+  padding-top: 15px;
+}
 
 button {
   background-color: rgba(125, 115, 252, 1);
@@ -380,4 +396,11 @@ button:hover {
 .about-section > p {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 327px;
 }
