@@ -418,8 +418,12 @@ form textarea {
 form button {
   width: 89px;
   height: 48px;
-  align-items: center;
+  margin-left: 110px;
   position: static;
   background-color: #7d73fc;
   color: #fff;
+}
+
+.contact h2 {
+  margin-left: 80px;
 }
