@@ -15,7 +15,7 @@ a {
 .container {
   display: flex;
   border: 1px solid;
-  width: 375px;
+  /* width: 375px; */
   background-color: rgb(4, 6, 110);
   flex-direction: column;
   background-image: url("img/Ellipse-large.svg");
@@ -277,7 +277,7 @@ h2 {
 }
 
 .work1 {
-  flex-direction: column;
+  flex-direction: row;
   background-image: url("img/Ellipse-long.svg");
   background-repeat: no-repeat;
   background-position-y: 70px;
@@ -351,7 +351,7 @@ button {
 }
 
 .work2 {
-  flex-direction: column;
+  flex-direction: row-reverse;
   margin-top: 45px;
   background-image: url("img/Ellipse-shallow.svg");
   background-repeat: no-repeat;
@@ -364,7 +364,7 @@ button {
 }
 
 .work3 {
-  flex-direction: column;
+  flex-direction: row;
   background-image: url("img/Ellipse-22.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -377,7 +377,7 @@ button {
 }
 
 .work4 {
-  flex-direction: column;
+  flex-direction: row-reverse;
   background-image: url("img/Ellipse-20.svg");
   background-repeat: no-repeat;
   background-position: right;
