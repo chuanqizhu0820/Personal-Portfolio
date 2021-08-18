@@ -15,12 +15,12 @@ a {
 .container {
   display: flex;
   border: 1px solid;
+  flex-direction: column;
   /* width: 375px; */
   background-color: rgb(4, 6, 110);
-  flex-direction: column;
-  background-image: url("img/Ellipse-large.svg");
-  background-repeat: no-repeat;
 }
+
+
 
 .toolbar-container {
   display: flex;
@@ -44,9 +44,28 @@ a {
 }
 
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:1000px) {
   .toolbar-container ul img {
     display: none;
+  }
+  .headline-container {
+    background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom; 
+  }
+
+  .work-container {
+    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"), url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: left top, right, left 1400px, right 1500px;
+  }
+}
+
+@media (max-width:1000px){
+  .container {
+    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"), url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"), url("img/mobile/work4-right.svg"); 
+    background-position: left top, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,no-repeat; 
   }
 }
 
@@ -173,6 +192,7 @@ hr {
 .skill-container {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .language {
