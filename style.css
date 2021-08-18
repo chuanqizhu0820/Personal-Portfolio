@@ -24,12 +24,38 @@ a {
 
 .toolbar-container {
   display: flex;
+  flex-direction: row;
   margin-top: 40px;
   justify-content: space-between;
 }
 
+.toolbar-container ul {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.toolbar-container ul li {
+  padding-right: 15px;
+}
+
+
+@media screen and (min-width:375px) {
+  .toolbar-container ul img {
+    display: none;
+  }
+}
+
+@media screen and (max-width:375px) {
+  .toolbar-container ul li {
+    display: none;
+  }
+}
+
+
 .logo {
   color: white;
+  margin-top: 10px;;
   margin-left: 24px;
   font-size: 18px;
   border: 1px solid white;
