@@ -277,10 +277,16 @@ h2 {
 }
 
 .work1 {
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("img/Ellipse-long.svg");
   background-repeat: no-repeat;
   background-position-y: 70px;
+}
+
+@media only screen and (min-width: 375px) {
+  .work1{
+    flex-direction: row;
+  }
 }
 
 .work1 > img {
@@ -358,6 +364,12 @@ button {
   background-position-y: 200px;
 }
 
+@media only screen and (max-width: 375px) {
+  .work2{
+    flex-direction: column;
+  }
+}
+
 .work2 > img {
   margin-left: 24px;
   margin-right: 24px;
@@ -376,12 +388,24 @@ button {
   margin-right: 24px;
 }
 
+@media only screen and (max-width: 375px) {
+  .work3{
+    flex-direction: column;
+  }
+}
+
 .work4 {
   flex-direction: row-reverse;
   background-image: url("img/Ellipse-20.svg");
   background-repeat: no-repeat;
   background-position: right;
   margin-top: 45px;
+}
+
+@media only screen and (max-width: 375px) {
+  .work4{
+    flex-direction: column;
+  }
 }
 
 .work4 > img {
