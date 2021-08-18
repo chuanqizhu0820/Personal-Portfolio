@@ -29,6 +29,10 @@ a {
   justify-content: space-between;
 }
 
+.toolbar-container div {
+  margin-top: 15px;
+}
+
 .toolbar-container ul {
   display: flex;
   flex-direction: row;
@@ -40,13 +44,13 @@ a {
 }
 
 
-@media screen and (min-width:375px) {
+@media screen and (min-width:500px) {
   .toolbar-container ul img {
     display: none;
   }
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:500px) {
   .toolbar-container ul li {
     display: none;
   }
@@ -105,7 +109,6 @@ a {
   margin-top: 22px;
   margin-bottom: 0;
 }
-
 
 .description {
   font-family: "Roboto";
@@ -340,9 +343,16 @@ h2 {
   background-position-y: 70px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 900px) {
   .work1{
     flex-direction: row;
+  }
+  #work1text {
+    flex:1;
+  }
+  #work1img {
+    flex:1.5;
+    height: auto;
   }
 }
 
@@ -350,6 +360,8 @@ h2 {
   margin-left: 24px;
   margin-right: 24px;
 }
+
+
 
 .work-name {
   font-size: 32px;
@@ -421,7 +433,7 @@ button {
   background-position-y: 200px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 900px) {
   .work2{
     flex-direction: column;
   }
