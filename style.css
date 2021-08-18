@@ -106,7 +106,9 @@ a {
   margin-bottom: 0;
 }
 
+
 .description {
+  font-family: "Roboto";
   margin-top: 20px;
   font-size: 20px;
   font-style: normal;
@@ -117,6 +119,35 @@ a {
   text-align: center;
   color: rgba(200, 200, 212, 1);
 }
+
+@media screen and (min-width:600px) {
+  .headline-name {
+    font-family: "Roboto";
+   font-size: 90px;
+font-style: normal;
+font-weight: 700;
+line-height: 105px;
+letter-spacing: 0em;
+text-align: center;
+  }
+
+  .identity {
+    font-family: "Roboto";
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: center;
+
+  }
+
+  .description {
+line-height: 32px;
+width: 447px;
+  }
+}
+
 
 .break-headline {
   margin: 33px 24px 33px 24px;
