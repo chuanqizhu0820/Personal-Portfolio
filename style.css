@@ -426,16 +426,23 @@ button {
 }
 
 .work2 {
-  flex-direction: row-reverse;
+  flex-direction: column;
   margin-top: 45px;
   background-image: url("img/Ellipse-shallow.svg");
   background-repeat: no-repeat;
   background-position-y: 200px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   .work2{
-    flex-direction: column;
+    flex-direction: row-reverse;
+  }
+  #work2img {
+    flex: 1.5;
+    height: auto;
+  }
+  #work2text {
+    flex: 1;
   }
 }
 
@@ -445,7 +452,7 @@ button {
 }
 
 .work3 {
-  flex-direction: row;
+  flex-direction: column;
   background-image: url("img/Ellipse-22.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -457,24 +464,40 @@ button {
   margin-right: 24px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 900px) {
   .work3{
-    flex-direction: column;
+    flex-direction: row;
+  }
+
+  #work3img {
+    flex: 1.5;
+    height: auto;
+  }
+  #work3text {
+    flex: 1;
   }
 }
 
 .work4 {
-  flex-direction: row-reverse;
+  flex-direction: column;
   background-image: url("img/Ellipse-20.svg");
   background-repeat: no-repeat;
   background-position: right;
   margin-top: 45px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 900px) {
   .work4{
-    flex-direction: column;
+    flex-direction: row-reverse;
   }
+  #work4img {
+    flex: 1.5;
+    height: auto;
+  }
+  #work4text {
+    flex: 1;
+  }
+
 }
 
 .work4 > img {
