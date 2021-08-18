@@ -338,29 +338,28 @@ h2 {
 
 .work1 {
   flex-direction: column;
-  background-image: url("img/Ellipse-long.svg");
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  /* background-image: url("img/Ellipse-long.svg");
   background-repeat: no-repeat;
-  background-position-y: 70px;
+  background-position-y: 70px; */
 }
 
 @media only screen and (min-width: 900px) {
   .work1{
     flex-direction: row;
+    margin-left: 142px;
+    margin-right: 142px;
   }
   #work1text {
-    flex:1;
+    flex: 1;
   }
   #work1img {
-    flex:1.5;
+    flex: 1.5;
     height: auto;
   }
 }
-
-.work1 > img {
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
 
 
 .work-name {
@@ -427,82 +426,80 @@ button {
 
 .work2 {
   flex-direction: column;
-  margin-top: 45px;
-  background-image: url("img/Ellipse-shallow.svg");
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 100px;
+  /* background-image: url("img/Ellipse-long.svg");
   background-repeat: no-repeat;
-  background-position-y: 200px;
+  background-position-y: 70px; */
 }
 
 @media only screen and (min-width: 900px) {
-  .work2{
+  .work2 {
     flex-direction: row-reverse;
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+  #work2text {
+    flex: 1;
   }
   #work2img {
     flex: 1.5;
     height: auto;
   }
-  #work2text {
-    flex: 1;
-  }
-}
-
-.work2 > img {
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 .work3 {
   flex-direction: column;
-  background-image: url("img/Ellipse-22.svg");
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-top: 45px;
-}
-
-.work3 > img {
+  align-items: center;
   margin-left: 24px;
   margin-right: 24px;
+  margin-top: 100px;
+  /* background-image: url("img/Ellipse-long.svg");
+  background-repeat: no-repeat;
+  background-position-y: 70px; */
 }
 
 @media only screen and (min-width: 900px) {
-  .work3{
+  .work3 {
     flex-direction: row;
-  }
-
-  #work3img {
-    flex: 1.5;
-    height: auto;
+    margin-left: 142px;
+    margin-right: 142px;
   }
   #work3text {
     flex: 1;
+  }
+  #work3img {
+    flex: 1.2;
+    height: auto;
   }
 }
 
 .work4 {
   flex-direction: column;
-  background-image: url("img/Ellipse-20.svg");
+  align-items: center;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 100px;
+  /* background-image: url("img/Ellipse-long.svg");
   background-repeat: no-repeat;
-  background-position: right;
-  margin-top: 45px;
+  background-position-y: 70px; */
 }
 
 @media only screen and (min-width: 900px) {
-  .work4{
+  .work4 {
     flex-direction: row-reverse;
-  }
-  #work4img {
-    flex: 1.5;
-    height: auto;
+    margin-left: 142px;
+    margin-right: 142px;
   }
   #work4text {
     flex: 1;
   }
-
-}
-
-.work4 > img {
-  margin-left: 24px;
-  margin-right: 24px;
+  #work4img {
+    flex: 1.2;
+    height: auto;
+  }
 }
 
 .about-section > p {
@@ -544,7 +541,7 @@ form button {
 }
 
 .contact h2 {
-  margin-left: 65px;
+  /* margin-left: 65px; */
   margin-top: 100px;
   margin-bottom: 0;
 }
