@@ -1,8 +1,7 @@
 # Project Name
 
-my_portfolio
-
-a mobile version skeleton
+My Portfolio
+A project in Microverse program 
 
 ## Built With
 HTML CSS
