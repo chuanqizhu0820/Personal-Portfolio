@@ -204,6 +204,8 @@ h3 {
 
 .logo:hover {
   cursor: pointer;
+  background-color: white;
+  color:rgb(4, 6, 110);
 }
 
 .menu-icon {
