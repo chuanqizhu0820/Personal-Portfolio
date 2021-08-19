@@ -166,13 +166,16 @@ h3 {
   }
 
   .headline-container {
-    background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
+    background-image: url("img/desktop/home-left-top.svg"),
+      url("img/desktop/home-right-bottom.svg");
     background-repeat: no-repeat, no-repeat;
     background-position: left top, right bottom;
   }
 
   .work-container {
-    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"), url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
+    background-image: url("img/desktop/work1-left.svg"),
+      url("img/desktop/work2-right.svg"), url("img/desktop/work3-left.svg"),
+      url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -180,9 +183,14 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"), url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"), url("img/mobile/work4-right.svg");
-    background-position: left top, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-image: url("img/mobile/home-left-top.svg"),
+      url("img/mobile/skill-right.svg"), url("img/mobile/work1-left.svg"),
+      url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
+      url("img/mobile/work4-right.svg");
+    background-position: left top, right 500px, left 1000px, right 1800px,
+      left 2500px, right 3100px;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat,
+      no-repeat;
   }
 }
 
@@ -208,20 +216,19 @@ h3 {
 }
 
 @keyframes rotation {
-from {
-  transform: rotate(0deg);
-}
+  from {
+    transform: rotate(0deg);
+  }
 
-to {
-  transform: rotate(360deg);
-}
-
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .logo:hover {
   cursor: pointer;
   background-color: white;
-  color:rgb(4, 6, 110);
+  color: rgb(4, 6, 110);
 }
 
 .menu-icon {
@@ -261,6 +268,10 @@ to {
   color: rgba(125, 115, 252, 1);
   margin-top: 60px;
   margin-bottom: 0;
+}
+
+.headline-name:hover {
+  transform: translate(70px);
 }
 
 .identity {
