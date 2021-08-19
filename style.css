@@ -202,6 +202,22 @@ h3 {
   padding: 3px;
 }
 
+.rotated {
+  animation-duration: 3s;
+  animation-name: rotation;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+
+}
+
 .logo:hover {
   cursor: pointer;
   background-color: white;
