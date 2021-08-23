@@ -3,6 +3,8 @@
 My Portfolio: 
 A project in Microverse program 
 
+![screenshot](img/homepage.png)
+
 ## Built With
 HTML CSS
 
