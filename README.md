@@ -7,7 +7,7 @@ A project in Microverse program
 HTML CSS
 
 ## Live Demo
-
+https://chuanqizhu0820.github.io/my_portfolio/
 
 ## Getting Started
 
