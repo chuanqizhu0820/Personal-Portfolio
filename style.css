@@ -415,11 +415,13 @@ h2 {
   }
 
   #work1text {
-    flex: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
   }
 
   #work1img {
-    flex: 3;
+    flex-basis: 50%;
+    flex-shrink: 3;
     height: auto;
   }
 }
@@ -506,11 +508,13 @@ button {
   }
 
   #work2text {
-    flex: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
   }
 
   #work2img {
-    flex: 1.5;
+    flex-basis: 50%;
+    flex-shrink: 3;
     height: auto;
   }
 }
@@ -535,11 +539,13 @@ button {
   }
 
   #work3text {
-    flex: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
   }
 
   #work3img {
-    flex: 1.2;
+    flex-basis: 50%;
+    flex-shrink: 3;
     height: auto;
   }
 }
@@ -564,11 +570,13 @@ button {
   }
 
   #work4text {
-    flex: 1;
+    flex-basis: 50%;
+    flex-shrink: 1;
   }
 
   #work4img {
-    flex: 1.2;
+    flex-basis: 50%;
+    flex-shrink: 3;
     height: auto;
   }
 }
