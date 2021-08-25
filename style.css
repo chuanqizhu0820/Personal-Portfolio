@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+.menu-icon a {
+  color: white;
+}
+
 .container {
   display: flex;
   border: 1px solid;
