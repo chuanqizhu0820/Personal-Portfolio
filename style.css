@@ -610,12 +610,15 @@ form input {
   height: 48px;
   border: none;
   width: 327px;
+  padding-left: 16px;
 }
 
 form textarea {
   margin-bottom: 20px;
   height: 148px;
   width: 327px;
+  padding-left: 16px;
+  padding-top: 16px;
 }
 
 form button {
@@ -646,6 +649,8 @@ form button {
   text-align: center;
 }
 
+
+
 ::placeholder {
   font-family: "Inter", Arial, sans-serif;
   font-size: 15px;
@@ -654,7 +659,6 @@ form button {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  padding-left: 16px;
 }
 
 input[type="email"]::placeholder {
