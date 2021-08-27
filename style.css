@@ -22,7 +22,7 @@ a {
   flex-direction: column;
 
   /* width: 375px; */
-  background-color: rgb(4, 6, 110);
+  background-color: rgb(1, 1, 61);
 }
 
 .skill-container {
@@ -170,9 +170,29 @@ h3 {
   }
 
   .headline-container {
+    animation-name: wave;
+    animation-duration: 3s;
     background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
+    opacity: 1;
     background-repeat: no-repeat, no-repeat;
-    background-position: left top, right bottom;
+    background-position: left bottom, right top;
+  }
+
+  @keyframes wave {
+    from{
+      
+      background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
+      opacity: 0.1;
+      background-repeat: no-repeat, no-repeat;
+      background-position: center center, center center;
+     
+    }
+    to{
+      background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
+      opacity: 1;
+      background-repeat: no-repeat, no-repeat;
+      background-position: left bottom, right top;
+    }
   }
 
   .work-container {
@@ -208,6 +228,8 @@ h3 {
 
 .logo:hover {
   cursor: pointer;
+  background-color: white;
+  color:rgb(4, 6, 110);
 }
 
 .menu-icon {
