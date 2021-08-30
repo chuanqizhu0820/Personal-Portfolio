@@ -20,5 +20,10 @@ function expand() {
 
     const menuicon = document.querySelector("#menu-icon");
     menuicon.remove();
+
+
+    const crossIcon = document.querySelector('#cross-icon');
+    let listCross = document.createElement('li');
+    
 }
 icon.addEventListener('click', expand);
