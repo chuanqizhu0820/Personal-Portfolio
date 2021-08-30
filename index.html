@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9RMBD9JB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9RMBD9JB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-QD9RMBD9JB');
-</script>
+    gtag('config', 'G-QD9RMBD9JB');
+  </script>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,18 +22,20 @@
 </head>
 
 <body>
+  <header class="toolbar toolbar-container">
+    <div><a href="#" class="logo">C. Zhu</a></div>
+    <nav class="menu-icon">
+      <ul>
+        <li class="li-item"><a href="#">Portfolio</a></li>
+        <li class="li-item"><a href="#">About</a></li>
+        <li class="li-item"><a href="#">Contact</a></li>
+        <li class="menu-icon"><a href="#"><img src="img/Union.png" alt="menu icon" /></a></li>
+      </ul>
+      <ul class="menu-list">
+      </ul>
+    </nav>
+  </header>
   <main class="container">
-    <header class="toolbar toolbar-container">
-      <div><a href="#" class="logo">C. Zhu</a></div>
-      <nav class="menu-icon">
-        <ul>
-          <li class="li-item"><a href="#">Portfolio</a></li>
-          <li class="li-item"><a href="#">About</a></li>
-          <li class="li-item"><a href="#">Contact</a></li>
-          <li><a href="#"><img src="img/Union.png" alt="menu icon" /></a></li>
-        </ul>
-      </nav>
-    </header>
     <section class="headline headline-container">
       <h1 class="headline-name">Chuanqi Zhu</h1>
       <h2 class="identity">Software Developer</h2>
@@ -207,6 +209,7 @@
       </ul>
     </footer>
   </main>
+  <script src="/menu-icon.js"></script>
 </body>
 
 </html>
