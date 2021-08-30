@@ -17,5 +17,8 @@ function expand() {
     li3.id = 'contact';
     li3.textContent = 'Contact';
     list.appendChild(li3);
+
+    const menuicon = document.querySelector("#menu-icon");
+    menuicon.remove();
 }
 icon.addEventListener('click', expand);
