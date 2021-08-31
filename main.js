@@ -18,9 +18,7 @@ function closeMenu() {
 
 closebutton.addEventListener('click', closeMenu);
 
-// const listItem = document.querySelectorAll('.menu-btn');
-// listItem.forEach((item) => () {
-//     item.addEventListener('click', () => {
-        
-//     });
-// });
+const listItem = document.querySelectorAll('.menu-btn');
+listItem.forEach((item) => {
+    item.addEventListener('click', closeMenu);
+})
