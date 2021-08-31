@@ -15,27 +15,27 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style2.css" />
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter" type="text/css">
   <title>Portfolio | Chuanqi Zhu</title>
 </head>
 
 <body>
+  <header class="toolbar toolbar-container">
+    <div><a href="#" class="logo">C. Zhu</a></div>
+    <nav>
+      <ul class="menu-icon ">
+        <li id="menu-icon"><a href="#"><img src="img/Union.png" alt="menu icon" /></a></li>
+      </ul>
+      <ul class="menu-list">
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <main class="container">
-    <header class="toolbar toolbar-container">
-      <div><a href="#" class="logo">C. Zhu</a></div>
-      <nav class="menu-icon">
-        <ul id="cross-icon">
-          <li class="li-item"><a href="#">Portfolio</a></li>
-          <li class="li-item"><a href="#">About</a></li>
-          <li class="li-item"><a href="#">Contact</a></li>
-          <li id="menu-icon"><a href="#"><img src="img/Union.png" alt="menu icon" /></a></li>
-        </ul>
-        <ul class="menu-list">
-        </ul>
-      </nav>
-    </header>
     <section class="headline headline-container">
       <h1 class="headline-name">Chuanqi Zhu</h1>
       <h2 class="identity">Software Developer</h2>
@@ -45,12 +45,14 @@
         projects below.
       </p>
 
-      <div>
+      <div id="skills">
         <hr class="breakline-skill" />
         <div class="skill skill-container">
           <div class="language">
-            <h3>Language</h3>
             <ul class="lan-container">
+              <li>
+                <h3>Language</h3>
+              </li>
               <li>Javascript</li>
               <li>Ruby</li>
               <li>HTML</li>
@@ -58,8 +60,10 @@
             </ul>
           </div>
           <div class="framework">
-            <h3>Framework</h3>
             <ul class="fra-container">
+              <li>
+                <h3>Framework</h3>
+              </li>
               <li>Ruby on Rails</li>
               <li>RSPec</li>
               <li>CapyBara</li>
@@ -68,8 +72,10 @@
             </ul>
           </div>
           <div class="tools">
-            <h3>Tools</h3>
             <ul class="to-container">
+              <li>
+                <h3>Tools</h3>
+              </li>
               <li>Codekit</li>
               <li>Github</li>
               <li>Codepen</li>
@@ -81,9 +87,9 @@
         <hr class="breakline-skill" />
       </div>
 
-      <div class="work-link-container">
+      <div class="work-link">
         <img src="img/down-arrow.png" alt="arrow to my works" />
-        <a href="#" class="work-link">Work</a>
+        <a href="#">Work</a>
       </div>
     </section>
     <section class="work-section">
@@ -209,7 +215,7 @@
       </ul>
     </footer>
   </main>
-  <script src="/menu-icon.js"></script>
+  <script src="/menu-icon2.js"></script>
 </body>
 
 </html>

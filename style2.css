@@ -1,0 +1,152 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #0d0368;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+body h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+  letter-spacing: 0.3700000048px;
+  text-align: center;
+  color: #7d73fc;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+body h2 {
+  height: 87px;
+  font-size: 32px;
+  color: white;
+  margin-top: 22px;
+  margin-bottom: 0;
+}
+body h3 {
+  color: #7d73fc;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+body p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #c8c8d4;
+}
+body ul {
+  list-style-type: none;
+}
+body hr {
+  border: solid #646369 1px;
+}
+body button {
+  background-color: #7d73fc;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 89px;
+  height: 48px;
+  margin-left: 24px;
+}
+body a {
+  text-decoration: none;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+body header a {
+  text-decoration: none;
+  color: white;
+}
+body header div {
+  color: white;
+  margin-left: 24px;
+  font-size: 18px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+body header .logo {
+  display: inline;
+}
+body header .menu-icon {
+  display: block;
+}
+body header .menu-list {
+  display: none;
+}
+body .headline .identity {
+  text-align: center;
+}
+body .headline #skills ul {
+  font-size: 15px;
+  color: white;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+}
+body .headline .skill-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .headline .skill-container ul {
+  width: 160px;
+}
+body .work-link {
+  position: relative;
+  left: 50%;
+  right: 50%;
+}
+body .work-link a {
+  font-size: 20px;
+  color: #a2a3ae;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+body .work-section .work-section-headline {
+  color: #9490ff;
+}
+body .work-section .work-name {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 44px;
+  text-align: left;
+  color: white;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+body .work-section .flex {
+  display: flex;
+  flex-direction: column;
+}
+body .work-section .work-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: white;
+}
+
+/*# sourceMappingURL=style2.css.map */

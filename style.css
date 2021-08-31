@@ -17,9 +17,9 @@ header {
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 0,0,0,0;
+  margin: 0, 0, 0, 0;
   width: auto;
-  height: 72px; 
+  height: 72px;
 }
 
 ul {
@@ -42,7 +42,7 @@ a {
   flex-direction: column;
   margin-top: 72px;
   /* width: 375px; */
-  background-color:  rgb(13, 3, 104);
+  background-color: rgb(13, 3, 104);
 }
 
 .skill-container {
@@ -173,7 +173,6 @@ h3 {
 
 .toolbar-container div {
   /* margin-top: 15px; */
-
 }
 
 .toolbar-container ul {
@@ -201,15 +200,13 @@ h3 {
   }
 
   @keyframes wave {
-    from{
-      
+    from {
       background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
       opacity: 0.1;
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
-     
     }
-    to{
+    to {
       background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
       opacity: 1;
       background-repeat: no-repeat, no-repeat;
@@ -218,7 +215,8 @@ h3 {
   }
 
   .work-container {
-    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"), url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
+    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"),
+      url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -226,7 +224,9 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"), url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"), url("img/mobile/work4-right.svg");
+    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
+      url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
+      url("img/mobile/work4-right.svg");
     background-position: left top, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   }
@@ -251,7 +251,7 @@ h3 {
 .logo:hover {
   cursor: pointer;
   background-color: white;
-  color:rgb(4, 6, 110);
+  color: rgb(4, 6, 110);
 }
 
 .menu-icon {
@@ -454,8 +454,6 @@ h2 {
   background-repeat: no-repeat;
   background-position-y: 70px; */
 }
-
-
 
 @media only screen and (min-width: 1000px) {
   .work1 {
@@ -694,8 +692,6 @@ form button {
   line-height: 30px;
   text-align: center;
 }
-
-
 
 ::placeholder {
   font-family: "Inter", Arial, sans-serif;
