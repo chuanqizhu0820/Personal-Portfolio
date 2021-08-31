@@ -1,5 +1,6 @@
 body {
   font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
 }
 
 ul {
@@ -17,7 +18,7 @@ a {
 }
 
 .container {
-  display: none;
+  display: flex;
   border: 1px solid;
   flex-direction: column;
 
@@ -146,18 +147,29 @@ h3 {
 .toolbar-container {
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: vw;
+  height: 75px;
+  background-color: rgb(1, 1, 61);
 }
 
 .toolbar-container div {
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-left: 24px;
 }
 
 .toolbar-container ul {
   display: flex;
   flex-direction: row;
   color: white;
+  margin-top: 25px;
 }
 
 .toolbar-container ul li {
@@ -206,7 +218,7 @@ h3 {
     background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
       url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
       url("img/mobile/work4-right.svg");
-    background-position: left top, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
+    background-position: left 100px, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   }
 }
@@ -258,6 +270,7 @@ h3 {
   align-items: center;
   margin-left: 24px;
   margin-right: 24px;
+  margin-top: 100px;
 }
 
 .headline-name {
@@ -714,7 +727,7 @@ button:hover {
 }
 
 .mobile-menu {
-  display: block;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -760,4 +773,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.popup-work1 {
 }
