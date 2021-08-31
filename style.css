@@ -147,15 +147,15 @@ h3 {
 .toolbar-container {
   display: flex;
   flex-direction: row;
+
   /* margin-top: 40px; */
   justify-content: space-between;
-
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: vw;
+  width: 100vw;
   height: 75px;
   background-color: rgb(1, 1, 61);
 }
@@ -197,6 +197,7 @@ h3 {
       background-repeat: no-repeat, no-repeat;
       background-position: center center, center center;
     }
+
     to {
       background-image: url("img/desktop/home-left-top.svg"), url("img/desktop/home-right-bottom.svg");
       opacity: 1;
@@ -206,8 +207,11 @@ h3 {
   }
 
   .work-container {
-    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"),
-      url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
+    background-image:
+      url("img/desktop/work1-left.svg"),
+      url("img/desktop/work2-right.svg"),
+      url("img/desktop/work3-left.svg"),
+      url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -215,8 +219,12 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
-      url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
+    background-image:
+      url("img/mobile/home-left-top.svg"),
+      url("img/mobile/skill-right.svg"),
+      url("img/mobile/work1-left.svg"),
+      url("img/mobile/work2-right.svg"),
+      url("img/mobile/work3-left.svg"),
       url("img/mobile/work4-right.svg");
     background-position: left 100px, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -733,10 +741,9 @@ button:hover {
   left: 0;
   bottom: 0;
   right: 0;
-  height: vh;
-  width: vw;
+  height: 100vh;
+  width: 100vw;
   background-color: rgb(1, 1, 61);
-
   background-image: url("img/mobile/mobile-menu-right.svg"), url(img/mobile/mobile-menu-left.svg);
   background-position: left top, right bottom;
   background-repeat: no-repeat, no-repeat;
@@ -745,12 +752,11 @@ button:hover {
 .mobile-menu .flex {
   display: flex;
   flex-direction: column;
-
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 32px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 

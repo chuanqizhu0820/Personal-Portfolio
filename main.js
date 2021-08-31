@@ -1,24 +1,24 @@
-const hambbutton = document.querySelector(".menu-icon");
-const main = document.querySelector(".container");
-const menu = document.querySelector(".mobile-menu");
+const hambbutton = document.querySelector('.menu-icon');
+const main = document.querySelector('.container');
+const menu = document.querySelector('.mobile-menu');
 
 function openMenu() {
-    main.style.display = "none";
-    menu.style.display = "block";
+  main.style.display = 'none';
+  menu.style.display = 'block';
 }
 
 hambbutton.addEventListener('click', openMenu);
 
-const closebutton = document.querySelector("#cross-icon");
+const closebutton = document.querySelector('#cross-icon');
 
 function closeMenu() {
-    main.style.display = "flex";
-    menu.style.display = "none";
+  main.style.display = 'flex';
+  menu.style.display = 'none';
 }
 
 closebutton.addEventListener('click', closeMenu);
 
 const listItem = document.querySelectorAll('.menu-btn');
 listItem.forEach((item) => {
-    item.addEventListener('click', closeMenu);
-})
+  item.addEventListener('click', closeMenu);
+});
