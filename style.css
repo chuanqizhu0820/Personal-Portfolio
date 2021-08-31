@@ -207,11 +207,8 @@ h3 {
   }
 
   .work-container {
-    background-image:
-      url("img/desktop/work1-left.svg"),
-      url("img/desktop/work2-right.svg"),
-      url("img/desktop/work3-left.svg"),
-      url("img/desktop/work4-right.svg");
+    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"),
+      url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -219,12 +216,8 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image:
-      url("img/mobile/home-left-top.svg"),
-      url("img/mobile/skill-right.svg"),
-      url("img/mobile/work1-left.svg"),
-      url("img/mobile/work2-right.svg"),
-      url("img/mobile/work3-left.svg"),
+    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
+      url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
       url("img/mobile/work4-right.svg");
     background-position: left 100px, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
