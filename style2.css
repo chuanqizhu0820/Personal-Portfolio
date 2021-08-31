@@ -4,6 +4,9 @@ body {
   margin-left: 24px;
   margin-right: 24px;
 }
+body main {
+  display: block;
+}
 body h1 {
   font-size: 48px;
   font-style: normal;
@@ -62,30 +65,31 @@ body button {
 body a {
   text-decoration: none;
 }
-body header {
+body header a {
+  text-decoration: none;
+  color: white;
+}
+body header .flex {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-body header a {
-  text-decoration: none;
-  color: white;
-}
-body header div {
+body header .logo {
+  display: block;
   color: white;
   margin-left: 24px;
   font-size: 18px;
   border: 1px solid white;
   border-radius: 5px;
 }
-body header .logo {
-  display: inline;
-}
-body header .menu-icon {
+body header #menu-icon {
   display: block;
 }
-body header .menu-list {
+body header #cross-icon {
+  display: none;
+}
+body header #menu-list {
   display: none;
 }
 body .headline .identity {

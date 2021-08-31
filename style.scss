@@ -4,6 +4,10 @@ body {
     margin-left: 24px;
     margin-right: 24px;
 
+    main {
+        display: block;
+    }
+
     h1 {
         font-size: 48px;
         font-style: normal;
@@ -70,17 +74,20 @@ body {
     }
 
     header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-
         a {
             text-decoration: none;
             color: white;
         }
 
-        div {
+        .flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: block;
             color: white;
             margin-left: 24px;
             font-size: 18px;
@@ -88,15 +95,15 @@ body {
             border-radius: 5px;
         }
 
-        .logo {
-            display: inline;
-        }
-
-        .menu-icon {
+        #menu-icon {
             display: block;
         }
 
-        .menu-list {
+        #cross-icon {
+            display: none;
+        }
+
+        #menu-list {
             display: none;
         }
     }
