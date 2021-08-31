@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9RMBD9JB"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QD9RMBD9JB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-QD9RMBD9JB');
-</script>
+    gtag('config', 'G-QD9RMBD9JB');
+  </script>
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -22,6 +22,29 @@
 </head>
 
 <body>
+  <div class="mobile-menu">
+    <ul class="flex">
+      <li id="cross-icon"><a href="#"><img src="img/mobile/cross.png" alt="menu icon" /></a></li>
+      <li>
+        <ul class="list-flex">
+          <li><a class="menu-btn" href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio"><img src="img/mobile/menu-arr.png" alt="forword arrow"></a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-flex">
+          <li><a class="menu-btn" href="#about">About</a></li>
+          <li><a href="#about"><img src="img/mobile/menu-arr.png" alt="forword arrow"></a></li>
+        </ul>
+      </li>
+      <li>
+        <ul class="list-flex">
+          <li><a class="menu-btn" href="#contact">Contact</a></li>
+          <li><a href="#contact"><img src="img/mobile/menu-arr.png" alt="forword arrow"></a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <main class="container">
     <header class="toolbar toolbar-container">
       <div><a href="#" class="logo">C. Zhu</a></div>
@@ -35,7 +58,7 @@
       </nav>
     </header>
     <section class="headline headline-container">
-      <h1 class="headline-name">Chuanqi Zhu</h1>
+      <h1 id="portfolio" class="headline-name">Chuanqi Zhu</h1>
       <h2 class="identity">Software Developer</h2>
       <p class="description">
         I am a full-stack web developer, who can help you build your website
@@ -45,7 +68,7 @@
 
       <div>
         <hr class="breakline-skill" />
-        <div class="skill skill-container">
+        <div id="about" class="skill skill-container">
           <div class="language">
             <h3>Language</h3>
             <ul class="lan-container">
@@ -174,7 +197,7 @@
         </div>
       </div>
     </section>
-    <footer class="contact">
+    <footer id="contact" class="contact">
       <h2>CONTACT US</h2>
       <p class="description">If you have an application you are interested in developing,
         a feature that you need built or a project
@@ -207,6 +230,7 @@
       </ul>
     </footer>
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
