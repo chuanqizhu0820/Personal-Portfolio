@@ -57,3 +57,36 @@ live: “https://chuanqizhu0820.github.io/My-Portfolio/”,
 source: “https://github.com/chuanqizhu0820/My-Portfolio”
 }
 }
+
+function openWindow() {
+const popupwindow = document.querySelector(“#popup-window”);
+let workid = this.id;
+const protitle = document.querySelector(“#windowtitle”)
+protitle.textContent = projectInfo[workid].name;
+const proimg = document.querySelector(“#windowimg”)
+proimg.src = projectInfo[workid].image;
+const protech = document.querySelectorAll(“#windowtech li”)
+protech.forEach((item, i) => {
+item.textContent = projectInfo[workid].tech[i];
+})
+const prolive = document.querySelector(“#btnlive a”)
+prolive.href = projectInfo[workid].live;
+console.log(prolive.href);
+const prosource = document.querySelector(“#btnsource a”)
+prosource.href = projectInfo[workid].source;
+popupwindow.style.display = ‘block’;
+}
+const btnWork1 = document.querySelector(“#work1”);
+const btnWork2 = document.querySelector(“#work2");
+const btnWork3 = document.querySelector(“#work3”);
+const btnWork4 = document.querySelector(“#work4");
+btnWork1.addEventListener(“click”, openWindow);
+btnWork2.addEventListener(“click”, openWindow);
+btnWork3.addEventListener(“click”, openWindow);
+btnWork4.addEventListener(“click”, openWindow);
+function closeWindow() {
+const popupwindow = document.querySelector(“#popup-window”);
+popupwindow.style.display = ‘none’;
+}
+const btnclose = document.querySelector(“#closewindow”);
+btnclose.addEventListener(“click”, closeWindow);
