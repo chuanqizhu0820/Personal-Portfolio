@@ -758,10 +758,27 @@ button:hover {
   margin-left: 85%;
 }
 
+.content ul li {
+  margin-right: 20px;
+  border-right: grey solid 1px;
+  padding-right: 20px;
+}
+
 .mobile-menu .flex li {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.content button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover {
+  cursor: pointer;
+  background-color: rgba(245, 245, 255, 1);
+  color: black;
 }
 
 .mobile-menu .flex a {
@@ -799,7 +816,6 @@ button:hover {
   width: 90vw;
   background-color: transparent;
   border: white solid 1px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -823,7 +839,7 @@ button:hover {
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
 }
 
@@ -844,7 +860,7 @@ button:hover {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   color: white;
   margin: 20px;
@@ -858,12 +874,6 @@ button:hover {
   border-left: grey solid 1px;
 }
 
-.content ul li {
-  margin-right: 20px;
-  border-right: grey solid 1px;
-  padding-right: 20px;
-}
-
 #windowfoot {
   display: flex;
   flex-direction: column;
@@ -874,6 +884,14 @@ button:hover {
   #windowfoot {
     flex-direction: row;
     justify-content: center;
+  }
+
+  #btnlive {
+    margin-right: 20px;
+  }
+
+  #btnsource {
+    margin-left: 20px;
   }
 
   .content h2 {
@@ -891,18 +909,41 @@ button:hover {
   width: auto;
 }
 
-.content button a {
-  text-decoration: none;
-  color: white;
-}
-
 .content button img {
   padding-top: 5px;
   padding-left: 7px;
 }
 
-button a:hover {
-  cursor: pointer;
-  background-color: rgba(245, 245, 255, 1);
-  color: black;
+#btnlive {
+  background-color: rgba(125, 115, 252, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 89px;
+  height: 48px;
+  margin-left: 0px;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+#btnsource {
+  background-color: rgba(125, 115, 252, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 120px;
+  height: 48px;
+  margin-left: 0px;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
 }
