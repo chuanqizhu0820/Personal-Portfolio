@@ -779,16 +779,6 @@ button:hover {
   display: none;
 }
 
-#popup-back {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  z-index: 50;
-  height: 100vh;
-  width: 100vw;
-  background-color: rgb(1, 1, 61);
-}
-
 #popup-square {
   position: fixed;
   top: 5%;
@@ -796,32 +786,66 @@ button:hover {
   z-index: 100;
   height: 90vh;
   width: 90vw;
-  background-color: white;
-  opacity: 0.2;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(100px);
 }
 
-#popup-container {
+.content {
   position: fixed;
   top: 5%;
   left: 5%;
-  z-index: 100;
+  z-index: 200;
   height: 90vh;
   width: 90vw;
   background-color: transparent;
   border: white solid 1px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-.content {
+#windowhead {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#closewindow {
+  margin-left: 30vw;
+}
+
+.content h2 {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#windowbody {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.content h2 {
-  color: white;
+#windowimg {
+  width: 80vw;
+  height: 30vh;
+  object-fit: cover;
 }
 
 .content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
   color: white;
   margin: 20px;
 }
@@ -838,4 +862,47 @@ button:hover {
   margin-right: 20px;
   border-right: grey solid 1px;
   padding-right: 20px;
+}
+
+#windowfoot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 800px) {
+  #windowfoot {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .content h2 {
+    font-size: 40px;
+  }
+
+  #windowimg {
+    width: 80vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+
+.content button {
+  width: auto;
+}
+
+.content button a {
+  text-decoration: none;
+  color: white;
+}
+
+.content button img {
+  padding-top: 5px;
+  padding-left: 7px;
+}
+
+button a:hover {
+  cursor: pointer;
+  background-color: rgba(245, 245, 255, 1);
+  color: black;
 }
