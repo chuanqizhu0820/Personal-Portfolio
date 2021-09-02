@@ -1,14 +1,13 @@
-
 const email = document.getElementById('email');
-const form = document.querySelector('#contact');
+const form = document.querySelector('#contactform');
 
-form.addEventListener('submit', function (e) {
-    let emailinput = email.value;
-    if (emailinput.toLowerCase() !== emailinput) {
-    e.preventDefault();
+form.addEventListener('submit', (e) => {
+    const emailinput = email.value;
     const errorEmail = document.querySelector('small');
-    errorEmail.innerText = "Error: please enter lower-case email address";
-    errorEmail.style.cssText = 'color: "red"; font-size: 15px';
-    }else{
-    errotEmail.style.display = 'none';
+    if (emailinput.toLowerCase() !== emailinput) {
+        e.preventDefault();
+        errorEmail.innerText = 'Error: please enter lower-case email address';
+    } else {
+        errorEmail.style.display = 'none';
+    }
 });
