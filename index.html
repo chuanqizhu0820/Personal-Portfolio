@@ -203,12 +203,13 @@
         a feature that you need built or a project
         that needs coding. I’d love to help with it.</p>
 
-      <form action="https://formspree.io/f/xayaljee" method="POST">
+      <form action="https://formspree.io/f/xayaljee" method="POST" id="contact">
         <input type="text" name="user_name" placeholder="Text input" maxlength="30" value="" required />
-        <input type="email" name="_replyto" placeholder="jeremy@gmail.com" required />
+        <input type="email" id="email" name="_replyto" placeholder="jeremy@gmail.com" required />
         <textarea name="message" placeholder="Enter text here" maxlength="500" required></textarea>
         <!-- your other form fields go here -->
-        <button type="submit">See project</button>
+        <button id="btn-submit" type="submit">See project</button>
+        <small></small>
       </form>
 
       <ul class="contact-container">
@@ -231,6 +232,7 @@
     </footer>
   </main>
   <script src="main.js"></script>
+  <script src="form.js"></script>
 </body>
 
 </html>
