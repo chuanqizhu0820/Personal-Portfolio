@@ -925,7 +925,7 @@ button a:hover {
   border: none;
   width: 89px;
   height: 48px;
-  margin-left: 0px;
+  margin-left: 0;
   padding-top: 14px;
   padding-left: 15px;
   padding-right: 10px;
@@ -942,7 +942,7 @@ button a:hover {
   border: none;
   width: 120px;
   height: 48px;
-  margin-left: 0px;
+  margin-left: 0;
   padding-top: 14px;
   padding-left: 15px;
   padding-right: 10px;
