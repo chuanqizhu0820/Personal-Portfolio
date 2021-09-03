@@ -124,6 +124,10 @@ projectInfo.forEach((item) => {
 
 workcontainer.innerHTML = projhtml;
 
+const pageheader = document.querySelector('header');
+const pagework = document.querySelector('.work-section');
+const pagefooter = document.querySelector('footer');
+
 function openWindow() {
   const popupwindow = document.querySelector('#popup-window');
   const workid = this.id;
@@ -146,6 +150,9 @@ function openWindow() {
   prosource.href = projectObj[workid].source;
 
   popupwindow.style.display = 'block';
+  pageheader.style.display = "none";
+  pagework.style.display = "none";
+  pagefooter.style.display = "none";
 }
 
 const btnWork1 = document.querySelector('#work1');
@@ -160,6 +167,9 @@ btnWork4.addEventListener('click', openWindow);
 function closeWindow() {
   const popupwindow = document.querySelector('#popup-window');
   popupwindow.style.display = 'none';
+  pageheader.style.display = "flex";
+  pagework.style.display = "block";
+  pagefooter.style.display = "flex";
 }
 
 const btnclose = document.querySelector('#windowclose');
