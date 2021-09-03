@@ -106,8 +106,8 @@ const workcontainer = document.querySelector('.work-container');
 let projhtml = '';
 
 projectInfo.forEach((item) => {
-  projhtml += `<div class="work${item.id} flex">
-    <img src=${item.image} alt="work1${item.id} image" id="work${item.id}img" />
+  projhtml += `<div class="work${item.id} flex" id="work${item.id}">
+    <img src=${item.image} alt="work${item.id} image" id="work${item.id}img" />
     <div id="work${item.id}text">
       <h3 class="work-name">${item.name}</h3>
       <p class="work-description">${item.description}</p>
@@ -128,9 +128,12 @@ const pageheader = document.querySelector('header');
 const pagework = document.querySelector('.work-section');
 const pagefooter = document.querySelector('footer');
 
+let workopen = "#";
+
 function openWindow() {
   const popupwindow = document.querySelector('#popup-window');
   const workid = this.id;
+  workopen += workid;
 
   const protitle = document.querySelector('#windowtitle');
   protitle.textContent = projectObj[workid].name;
@@ -170,6 +173,10 @@ function closeWindow() {
   pageheader.style.display = "flex";
   pagework.style.display = "block";
   pagefooter.style.display = "flex";
+  const towork = document.createElement('a')
+  towork.href = workopen;
+  towork.click();
+  workopen = "#";
 }
 
 const btnclose = document.querySelector('#windowclose');
