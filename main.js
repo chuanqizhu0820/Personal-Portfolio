@@ -36,7 +36,7 @@ if (localStorage.getItem('user') !== null) {
   msgInput.value = objStore.msg;
 }
 
-form.addEventListener('submit', () => {
+form.addEventListener('input', () => {
   const obj = {
     username: nameInput.value,
     email: emailInput.value,
