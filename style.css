@@ -24,6 +24,7 @@ a {
 
   /* width: 375px; */
   background-color: rgb(1, 1, 61);
+  backdrop-filter: blur(100px);
 }
 
 .skill-container {
@@ -208,11 +209,8 @@ h3 {
   }
 
   .work-container {
-    background-image:
-      url("img/desktop/work1-left.svg"),
-      url("img/desktop/work2-right.svg"),
-      url("img/desktop/work3-left.svg"),
-      url("img/desktop/work4-right.svg");
+    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"),
+      url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -220,12 +218,8 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image:
-      url("img/mobile/home-left-top.svg"),
-      url("img/mobile/skill-right.svg"),
-      url("img/mobile/work1-left.svg"),
-      url("img/mobile/work2-right.svg"),
-      url("img/mobile/work3-left.svg"),
+    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
+      url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
       url("img/mobile/work4-right.svg");
     background-position: left 100px, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -803,6 +797,17 @@ button a:hover {
   display: none;
 }
 
+/* #blur-square {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.979);
+  
+} */
+
 #popup-square {
   position: fixed;
   top: 5%;
@@ -823,11 +828,6 @@ button a:hover {
   width: 90vw;
   background-color: transparent;
   border: white solid 1px;
-
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around; */
 }
 
 #windowhead {
@@ -960,45 +960,3 @@ button a:hover {
     margin-left: 20px;
   }
 }
-
-/* .content ul {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-  border-left: grey solid 1px;
-} */
-
-/* @media (min-width: 800px) {
-  #windowfoot {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #btnlive {
-    margin-right: 20px;
-  }
-
-  #btnsource {
-    margin-left: 20px;
-  }
-
-  .content h2 {
-    font-size: 40px;
-  }
-
-  #windowimg {
-    width: 80vw;
-    height: 40vh;
-    object-fit: cover;
-  }
-} */
-
-/* .content button {
-  width: auto;
-}
-
-.content button img {
-  padding-top: 5px;
-  padding-left: 7px;
-} */
