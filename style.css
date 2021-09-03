@@ -208,11 +208,8 @@ h3 {
   }
 
   .work-container {
-    background-image:
-      url("img/desktop/work1-left.svg"),
-      url("img/desktop/work2-right.svg"),
-      url("img/desktop/work3-left.svg"),
-      url("img/desktop/work4-right.svg");
+    background-image: url("img/desktop/work1-left.svg"), url("img/desktop/work2-right.svg"),
+      url("img/desktop/work3-left.svg"), url("img/desktop/work4-right.svg");
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-position: left 200px, right, left 1650px, right 1800px;
   }
@@ -220,12 +217,8 @@ h3 {
 
 @media (max-width: 1000px) {
   .container {
-    background-image:
-      url("img/mobile/home-left-top.svg"),
-      url("img/mobile/skill-right.svg"),
-      url("img/mobile/work1-left.svg"),
-      url("img/mobile/work2-right.svg"),
-      url("img/mobile/work3-left.svg"),
+    background-image: url("img/mobile/home-left-top.svg"), url("img/mobile/skill-right.svg"),
+      url("img/mobile/work1-left.svg"), url("img/mobile/work2-right.svg"), url("img/mobile/work3-left.svg"),
       url("img/mobile/work4-right.svg");
     background-position: left 100px, right 500px, left 1000px, right 1800px, left 2500px, right 3100px;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
@@ -823,31 +816,32 @@ button a:hover {
   width: 90vw;
   background-color: transparent;
   border: white solid 1px;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around; */
 }
 
 #windowhead {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-#closewindow {
-  margin-left: 30vw;
-}
-
-.content h2 {
+#windowtitle {
   color: white;
-  font-size: 20px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0;
-  text-align: left;
+  margin-left: 20px;
+}
+
+#windowclose {
+  padding-right: 30px;
+  padding-top: 30px;
 }
 
 #windowbody {
@@ -862,23 +856,28 @@ button a:hover {
   object-fit: cover;
 }
 
-.content p {
+@media (min-width: 800px) {
+  #windowimg {
+    width: 85vw;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
+
+#windowdes {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0;
-  text-align: center;
   color: white;
-  margin: 20px;
+  width: 80vw;
 }
 
-.content ul {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  padding-left: 20px;
-  border-left: grey solid 1px;
+@media (min-width: 800px) {
+  #windowdes {
+    width: 55vw;
+  }
 }
 
 #windowfoot {
@@ -887,7 +886,81 @@ button a:hover {
   align-items: center;
 }
 
+#windowtech {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  border-left: grey solid 1px;
+}
+
+#windowbtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#btnlive {
+  background-color: rgba(125, 115, 252, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 89px;
+  height: 36px;
+  margin-left: 0;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+#btnsource {
+  background-color: rgba(125, 115, 252, 1);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+  width: 120px;
+  height: 36px;
+  margin-left: 0;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
 @media (min-width: 800px) {
+  #windowfoot {
+    margin-top: 10px;
+  }
+  #windowbtn {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #btnlive {
+    margin-right: 20px;
+  }
+
+  #btnsource {
+    margin-left: 20px;
+  }
+}
+
+/* .content ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  border-left: grey solid 1px;
+} */
+
+/* @media (min-width: 800px) {
   #windowfoot {
     flex-direction: row;
     justify-content: center;
@@ -910,47 +983,13 @@ button a:hover {
     height: 40vh;
     object-fit: cover;
   }
-}
+} */
 
-.content button {
+/* .content button {
   width: auto;
 }
 
 .content button img {
   padding-top: 5px;
   padding-left: 7px;
-}
-
-#btnlive {
-  background-color: rgba(125, 115, 252, 1);
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: none;
-  width: 89px;
-  height: 48px;
-  margin-left: 0;
-  padding-top: 14px;
-  padding-left: 15px;
-  padding-right: 10px;
-}
-
-#btnsource {
-  background-color: rgba(125, 115, 252, 1);
-  color: white;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: none;
-  width: 120px;
-  height: 48px;
-  margin-left: 0;
-  padding-top: 14px;
-  padding-left: 15px;
-  padding-right: 10px;
-}
+} */
