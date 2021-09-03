@@ -128,7 +128,7 @@ const pageheader = document.querySelector('header');
 const pagework = document.querySelector('.work-section');
 const pagefooter = document.querySelector('footer');
 
-let workopen = "#";
+let workopen = '#';
 
 function openWindow() {
   const popupwindow = document.querySelector('#popup-window');
@@ -153,9 +153,9 @@ function openWindow() {
   prosource.href = projectObj[workid].source;
 
   popupwindow.style.display = 'block';
-  pageheader.style.display = "none";
-  pagework.style.display = "none";
-  pagefooter.style.display = "none";
+  pageheader.style.display = 'none';
+  pagework.style.display = 'none';
+  pagefooter.style.display = 'none';
 }
 
 const btnWork1 = document.querySelector('#work1');
@@ -170,13 +170,13 @@ btnWork4.addEventListener('click', openWindow);
 function closeWindow() {
   const popupwindow = document.querySelector('#popup-window');
   popupwindow.style.display = 'none';
-  pageheader.style.display = "flex";
-  pagework.style.display = "block";
-  pagefooter.style.display = "flex";
-  const towork = document.createElement('a')
+  pageheader.style.display = 'flex';
+  pagework.style.display = 'block';
+  pagefooter.style.display = 'flex';
+  const towork = document.createElement('a');
   towork.href = workopen;
   towork.click();
-  workopen = "#";
+  workopen = '#';
 }
 
 const btnclose = document.querySelector('#windowclose');
