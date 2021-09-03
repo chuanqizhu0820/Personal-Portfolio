@@ -29,16 +29,22 @@ const nameInput = document.getElementById('username');
 const emailInput = document.getElementById('useremail');
 const msgInput = document.getElementById('usermsg');
 
-form.addEventListener("submit", function () {
-  const obj = {
-    "username": nameInput.value,
-    "email": emailInput.value,
-    "msg": msgInput.value
-  };
-  if (typeof (Storage) !== "undefined") {
-    localStorage.setItem("user", JSON.stringify(obj));
-  } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  }
-})
+if (localStorage.getItem('user') !== null) {
+  const objStore = JSON.parse(localStorage.getItem('user'));
+  nameInput.value = objStore.username;
+  emailInput.value = objStore.email;
+  msgInput.value = objStore.msg;
+}
 
+form.addEventListener('submit', () => {
+  const obj = {
+    username: nameInput.value,
+    email: emailInput.value,
+    msg: msgInput.value,
+  };
+  if (typeof (Storage) !== 'undefined') {
+    localStorage.setItem('user', JSON.stringify(obj));
+  } else {
+    document.getElementById('result').innerHTML = 'Sorry, your browser does not support Web Storage...';
+  }
+});
