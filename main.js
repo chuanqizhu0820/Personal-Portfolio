@@ -5,6 +5,7 @@ const menu = document.querySelector('.mobile-menu');
 function openMenu() {
   main.style.display = 'none';
   menu.style.display = 'block';
+}
 
 hambbutton.addEventListener('click', openMenu);
 
