@@ -23,7 +23,7 @@ listItem.forEach((item) => {
   item.addEventListener('click', closeMenu);
 });
 
-const form = document.getElementById('contact');
+const form = document.getElementById('contact-form');
 
 const nameInput = document.getElementById('username');
 const emailInput = document.getElementById('useremail');
