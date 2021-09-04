@@ -3,3 +3,5 @@ small {
   color: red;
   font-size: 15px;
 }
+
+<script src="form.js"></script>
