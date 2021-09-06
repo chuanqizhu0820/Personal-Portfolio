@@ -971,3 +971,9 @@ button a:hover {
     margin-top: 10px;
   }
 }
+
+small {
+  display: block;
+  color: red;
+  font-size: 15px;
+}

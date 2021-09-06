@@ -1,5 +1,5 @@
 const email = document.getElementById('email');
-const form = document.querySelector('#contactform');
+const form = document.querySelector('#contact-form');
 
 form.addEventListener('submit', (e) => {
   const emailinput = email.value;
@@ -11,8 +11,6 @@ form.addEventListener('submit', (e) => {
     errorEmail.style.display = 'none';
   }
 });
-
-const form = document.getElementById('contact-form');
 
 const nameInput = document.getElementById('username');
 const emailInput = document.getElementById('useremail');
