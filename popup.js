@@ -2,7 +2,7 @@ const projectInfo = [
   {
     id: 1,
     name: 'Multi-Post Stories',
-    image: 'img/work_img/Portfolio.png',
+    image: 'img/work_img/to-do-list.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     live: 'https://chuanqizhu0820.github.io/My-Portfolio/',
@@ -41,7 +41,7 @@ const projectObj = {
   work1: {
     id: 1,
     name: 'Multi-Post Stories',
-    image: 'img/work_img/Portfolio.png',
+    image: 'img/work_img/to-do-list.png',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required.has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
     tech: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
     live: 'https://chuanqizhu0820.github.io/My-Portfolio/',

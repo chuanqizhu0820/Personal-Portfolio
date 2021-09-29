@@ -24,7 +24,7 @@ a {
 
   /* width: 375px; */
   background-color: rgb(1, 1, 61);
-  backdrop-filter: blur(200px);
+  backdrop-filter: blur(100px);
 }
 
 .skill-container {
