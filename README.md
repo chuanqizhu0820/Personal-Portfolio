@@ -9,7 +9,7 @@ A project in Microverse program
 HTML CSS
 
 ## Live Demo
-https://chuanqizhu0820.github.io/My-Portfolio/
+https://chuanqizhu0820.github.io/Personal-Portfolio/
 
 <!-- ## Getting Started
 
